@@ -2,11 +2,11 @@ from cms.app_base import CMSAppConfig
 
 from djangocms_internalsearch.base import BaseSearchConfig
 
-from .models import TestModel1, TestModel2
+from .models import Model1, Model2
 
 
 class TestModel1Config(BaseSearchConfig):
-    model = TestModel1
+    model = Model1
     list_display = ['field1', 'field2']
 
     def prepare_text(self, obj):
@@ -14,7 +14,7 @@ class TestModel1Config(BaseSearchConfig):
 
 
 class TestModel2Config(BaseSearchConfig):
-    model = TestModel2
+    model = Model2
     list_display = ['field1', 'field2']
 
     def prepare_text(self, obj):

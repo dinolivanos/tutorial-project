@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'haystack',
     'djangocms_internalsearch',
+    'app_2',
     'mysite'
 )
 

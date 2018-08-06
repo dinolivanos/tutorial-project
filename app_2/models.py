@@ -5,6 +5,7 @@ from django.contrib.contenttypes.models import ContentType
 # Create your models here.
 
 class Model1(models.Model):
+
     fchar = models.CharField(max_length=100)
     fdate = models.DateField(blank=True, null=True)
     fdatetime = models.DateTimeField(auto_now_add=True)
@@ -23,21 +24,3 @@ class Model2(models.Model):
     f2int = models.IntegerField()
     f2url = models.URLField()
 
-
-class Query(models.Model):
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    query_time = models.DateTimeField(auto_now_add=True)
-    query_string = models.TextField()
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    def save(self):
-        # TODO customise saving
-        super().save()
-
-
-class AllIndex(models.Model):
-    achar = models.TextField()
-    adatetime = models.DateTimeField()
-    aint = models.IntegerField()
-    aurl = models.URLField()
-    abool = models.BooleanField()
