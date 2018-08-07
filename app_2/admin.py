@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-# from haystack.admin import SearchModelAdmin
-from djangocms_internalsearch.search_all_admin import SearchModelAdmin
+from haystack.admin import SearchModelAdmin
+#from djangocms_internalsearch.search_all_admin import SearchModelAdmin
 
 from .models import (
     Model1,
