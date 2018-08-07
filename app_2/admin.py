@@ -23,7 +23,7 @@ class Model2Admin(admin.ModelAdmin):
 
 class Model2SAdmin(SearchModelAdmin):
     search_fields = ('f2char',)
-    list_filter = ('f2date', 'f2datetime', 'f2bool', 'f2int', 'f2deci')
+    #list_filter = ('f2date', 'f2datetime', 'f2bool', 'f2int', 'f2deci')
 
 
 admin.site.register(Model1, Model1Admin)
